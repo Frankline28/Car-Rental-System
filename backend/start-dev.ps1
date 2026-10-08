@@ -1,0 +1,11 @@
+$env:DB_URL="jdbc:mysql://localhost:3306/car_rental?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true"
+$env:DB_USERNAME="root"
+$env:DB_PASSWORD="1234"
+$env:JWT_SECRET="CarRentalLocalDevSecretKey2024_MinLen32BytesOK"
+$env:JWT_EXPIRATION_SECONDS="86400"
+$env:CORS_ALLOWED_ORIGINS="http://localhost:3000,http://localhost:3001"
+$env:SEED_ADMIN_PASSWORD="Admin@123"
+$env:SPRING_PROFILES_ACTIVE="dev"
+
+Write-Host "Starting backend with SEED_ADMIN_PASSWORD set..."
+& "D:\capston project\apache-maven-3.9.9\bin\mvn.cmd" "spring-boot:run" "-Dspring-boot.run.profiles=dev"

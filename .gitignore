@@ -1,0 +1,31 @@
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/.env.local
+
+# Backend build output and cache
+backend/target/
+backend/.phase2-maven-repo/
+
+# Local environment and logs
+**/.env
+**/.env.*
+!**/.env*.example
+**/logs/
+*.log
+npm-debug.log*
+
+# IDE metadata and backup files
+**/.idea/
+**/.settings/
+**/.classpath
+**/.project
+**/.vscode/
+**/*.iml
+*.bak
+
+# Temporary working directories
+**/tmp/
+**/temp/
